@@ -1,4 +1,5 @@
 {
+  "package name": "mycontact backend api",
   "dependencies": {
     "express": "^4.18.2"
   }
