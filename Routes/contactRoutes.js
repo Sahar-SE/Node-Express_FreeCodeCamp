@@ -9,7 +9,7 @@ router.route("/").post((req, res) => {
     res.status(200).json({"message":"Get All Contacts!"});
 });
 
-router.route("/").get((req, res) => {
+router.route("/:id").put((req, res) => {
     res.status(200).json({"message":"Get All Contacts!"});
 });
 
