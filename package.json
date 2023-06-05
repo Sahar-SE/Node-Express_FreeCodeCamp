@@ -3,6 +3,9 @@
   "description": "This express project is for backend api",
   "main": "server.js",
   "author": "Sahar Saba Amiri",
+  "script": {
+    "start": "node server.js"
+  },
   "dependencies": {
     "express": "^4.18.2"
   },
