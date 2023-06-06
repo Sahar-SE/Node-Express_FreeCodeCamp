@@ -12,8 +12,8 @@ const creatContact = (req, res) => {
   res.status(201).json({"message":"Create Contact"});
 };
 
-//@desc Create new Contact
-//@route POST /api/contact
+//@desc Update  new Contact
+//@route PUT /api/contact
 //@access public
 const updateContact = (req, res) => {
   res.status(200).json({"message":`Update Contact ${req.params.id}`});
