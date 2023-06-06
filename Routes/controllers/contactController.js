@@ -3,4 +3,6 @@
 //@access public
 const getContact = (req, res) => {
     res.status(200).json({"message":`Show Contact ${req.params.id}`});
-}
+};
+
+module.exports = { getContact };
