@@ -23,14 +23,14 @@ const updateContact = (req, res) => {
 //@route DELETE /api/contact/:id
 //@access public
 const deleteContact = (req, res) => {
-  res.status(200).json({"message":`Delete Contact ${req.params.id}`});
+  res.status(200).json({message:`Delete Contact ${req.params.id}`});
 };
 
 //@desc Show Contact
 //@route GET /api/contact/:id
 //@access public
 const showContact = (req, res) => {
-  res.status(200).json({"message":`Show Contact ${req.params.id}`});
+  res.status(200).json({message:`Show Contact ${req.params.id}`});
 };
 
 module.exports = { getContact, creatContact, updateContact, deleteContact, showContact };
