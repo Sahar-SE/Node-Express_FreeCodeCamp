@@ -33,4 +33,4 @@ const showContact = (req, res) => {
   res.status(200).json({"message":`Show Contact ${req.params.id}`});
 };
 
-module.exports = { getContact, creatContact, updateContact };
+module.exports = { getContact, creatContact, updateContact, deleteContact };
