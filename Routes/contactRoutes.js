@@ -5,9 +5,7 @@ router.route("/").get((req, res) => {
     res.status(200).json({"message":"Get All Contacts!"});
 });
 
-router.route("/:id").get((req, res) => {
-    res.status(200).json({"message":`Show Contact ${req.params.id}`});
-});
+router.route("/:id").get();
 
 router.route("/").post((req, res) => {
     res.status(200).json({"message":"Create Contacts!"});
