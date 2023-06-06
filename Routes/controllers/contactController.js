@@ -26,8 +26,8 @@ const deleteContact = (req, res) => {
   res.status(200).json({"message":`Delete Contact ${req.params.id}`});
 };
 
-//@desc Create new Contact
-//@route POST /api/contact
+//@desc Show Contact
+//@route GET /api/contact
 //@access public
 const showContact = (req, res) => {
   res.status(200).json({"message":`Show Contact ${req.params.id}`});
