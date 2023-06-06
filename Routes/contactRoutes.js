@@ -6,7 +6,7 @@ router.route("/").get(getContact);
 
 router.route("/").post(createContact);
 
-router.route("/:id").put();
+router.route("/:id").put(updateContact);
 
 router.route("/:id").delete();
 
