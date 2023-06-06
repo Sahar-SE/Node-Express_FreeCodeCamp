@@ -15,8 +15,8 @@ const creatContact = (req, res) => {
 //@desc Create new Contact
 //@route POST /api/contact
 //@access public
-const creatContact = (req, res) => {
-  res.status(201).json({"message":"Create Contact"});
+const updateContact = (req, res) => {
+  res.status(200).json({"message":`Update Contact ${req.params.id}`});
 };
 
 //@desc Create new Contact
