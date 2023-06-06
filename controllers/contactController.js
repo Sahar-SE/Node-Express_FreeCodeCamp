@@ -8,7 +8,7 @@ const getContact = (req, res) => {
 //@desc Create new Contact
 //@route POST /api/contact
 //@access public
-const creatContact = (req, res) => {
+const createContact = (req, res) => {
   res.status(201).json({message:"Create Contact"});
 };
 
@@ -33,4 +33,4 @@ const showContact = (req, res) => {
   res.status(200).json({message:`Show Contact ${req.params.id}`});
 };
 
-module.exports = { getContact, creatContact, updateContact, deleteContact, showContact };
+module.exports = { getContact, createContact, updateContact, deleteContact, showContact };
