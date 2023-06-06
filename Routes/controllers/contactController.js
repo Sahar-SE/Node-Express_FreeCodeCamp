@@ -1,4 +1,6 @@
 //@desc Get all Contacts
 //@route GET /api/contact
 //@access public
-const getContact = 
+const getContact = (req, res) => {
+    res.status(200).json({"message":`Show Contact ${req.params.id}`});
+}
