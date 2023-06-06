@@ -11,10 +11,10 @@ const getContact = (req, res) => {
 const createContact = (req, res) => {
   console.log("The Request boby is:", req.body);
   const {name, lastname, phone} = req.boby;
-  if(!name || !lastname || phone) {
+  if(!name || !lastname || !phone) {
     res.status(400);
-    
-  }
+    throw new Error("Fields are empty");
+  };
   res.status(201).json({message:"Create Contact"});
 };
 
