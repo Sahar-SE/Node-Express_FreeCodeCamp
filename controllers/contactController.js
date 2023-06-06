@@ -9,14 +9,14 @@ const getContact = (req, res) => {
 //@route POST /api/contact
 //@access public
 const creatContact = (req, res) => {
-  res.status(201).json({"message":"Create Contact"});
+  res.status(201).json({message:"Create Contact"});
 };
 
 //@desc Update  new Contact
 //@route PUT /api/contact/:id
 //@access public
 const updateContact = (req, res) => {
-  res.status(200).json({"message":`Update Contact ${req.params.id}`});
+  res.status(200).json({message:`Update Contact ${req.params.id}`});
 };
 
 //@desc Delete Contact
