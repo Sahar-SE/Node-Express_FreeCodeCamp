@@ -6,9 +6,7 @@ router.route("/").get(getContact);
 
 router.route("/").post(createContact);
 
-router.route("/:id").put((req, res) => {
-    res.status(200).json({"message":`Update Contact ${req.params.id}`});
-});
+router.route("/:id").put();
 
 router.route("/:id").delete();
 
