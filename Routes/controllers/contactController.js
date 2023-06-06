@@ -2,14 +2,14 @@
 //@route GET /api/contact
 //@access public
 const getContact = (req, res) => {
-    res.status(200).json({"message":`Show Contact ${req.params.id}`});
+  res.status(200).json({"message":"Show all Contacts"});
 };
 
-//@desc Get all Contacts
-//@route GET /api/contact
+//@desc Create new Contact
+//@route POST /api/contact
 //@access public
 const creatContact = (req, res) => {
-    res.status(200).json({"message":`Show Contact ${req.params.id}`});
+  res.status(201).json({"message":"Create Contact"});
 };
 
-module.exports = { getContact };
+module.exports = { getContact, creatContact };
