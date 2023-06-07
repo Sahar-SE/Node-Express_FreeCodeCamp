@@ -8,7 +8,10 @@ const errorHundler = (err, req, res, next) => {
       break;
       case constants.NOT_FOUND:
         res.json({title: "Not Found", message: err.message, stackTrace: err.stack});
-      break;   
+      break;
+      case constants.UNAUTHORIZED:
+        res.json({title: "Not Found", message: err.message, stackTrace: err.stack});
+      break;
         default:
             break;
     }
