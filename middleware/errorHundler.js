@@ -15,6 +15,9 @@ const errorHundler = (err, req, res, next) => {
       case constants.FORBIDDEN:
         res.json({title: "Forbidden", message: err.message, stackTrace: err.stack});
       break;
+      case constants.SERVER_ERROR:
+        res.json({title: "", message: err.message, stackTrace: err.stack});
+      break;
         default:
             break;
     }
