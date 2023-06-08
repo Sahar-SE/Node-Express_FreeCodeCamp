@@ -36,7 +36,7 @@ const deleteContact = asyncHandler(req, res) => {
 //@desc Show Contact
 //@route GET /api/contact/:id
 //@access public
-const showContact = async(req, res) => {
+const showContact = asyncHandler(req, res) => {
   res.status(200).json({message:`Show Contact ${req.params.id}`});
 };
 
