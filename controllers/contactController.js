@@ -1,7 +1,7 @@
 //@desc Get all Contacts
 //@route GET /api/contact
 //@access public
-const getContact = (req, res) => {
+const getContact = async(req, res) => {
   res.status(200).json({message:"Show all Contacts"});
 };
 
