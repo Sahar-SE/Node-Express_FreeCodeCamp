@@ -22,7 +22,7 @@ const createContact = asyncHandler((req, res) => {
 //@desc Update  new Contact
 //@route PUT /api/contact/:id
 //@access public
-const updateContact = async(req, res) => {
+const updateContact = asyncHandler(req, res) => {
   res.status(200).json({message:`Update Contact ${req.params.id}`});
 };
 
