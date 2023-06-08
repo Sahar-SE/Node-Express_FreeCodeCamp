@@ -35,7 +35,7 @@ const deleteContact = async(req, res) => {
 //@desc Show Contact
 //@route GET /api/contact/:id
 //@access public
-const showContact = (req, res) => {
+const showContact = async(req, res) => {
   res.status(200).json({message:`Show Contact ${req.params.id}`});
 };
 
