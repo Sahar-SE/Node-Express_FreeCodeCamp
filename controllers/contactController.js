@@ -36,8 +36,8 @@ const deleteContact = asyncHandler((req, res) => {
 //@desc Show Contact
 //@route GET /api/contact/:id
 //@access public
-const showContact = asyncHandler(req, res) => {
+const showContact = asyncHandler((req, res) => {
   res.status(200).json({message:`Show Contact ${req.params.id}`});
-};
+});
 
 module.exports = { getContact, createContact, updateContact, deleteContact, showContact };
