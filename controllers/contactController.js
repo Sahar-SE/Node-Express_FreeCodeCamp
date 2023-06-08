@@ -8,7 +8,7 @@ const getContact = async(req, res) => {
 //@desc Create new Contact
 //@route POST /api/contact
 //@access public
-const createContact = (req, res) => {
+const createContact = async(req, res) => {
   console.log("The Request boby is:", req.body);
   const {name, lastname, phone} = req.boby;
   if(!name || !lastname || !phone) {
