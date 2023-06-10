@@ -3,8 +3,9 @@ const Contact = require("../models/contactModel")
 //@desc Get all Contacts
 //@route GET /api/contact
 //@access public
-const getContact = asyncHandler((req, res) => {
-  res.status(200).json({message:"Show all Contacts"});
+const getContact = asyncHandler( async(req, res) => {
+  const contacts = await Contact.find();
+  res.status(200).json(contacts);
 });
 
 //@desc Create new Contact
