@@ -21,7 +21,7 @@ const createContact = asyncHandler(async(req, res) => {
    const contact = await Contact.create({
     name, email, phone
    });
-   res.status(201).json({message:"Create Contact"});
+   res.status(201).json(contact);
 });
 
 //@desc Update  new Contact
