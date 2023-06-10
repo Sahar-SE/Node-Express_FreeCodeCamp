@@ -18,7 +18,8 @@ const createContact = asyncHandler(async(req, res) => {
     await res.status(400);
     throw new Error("Fields are empty");
   };
-  await res.status(201).json({message:"Create Contact"});
+   const contact = await Contact.create
+   res.status(201).json({message:"Create Contact"});
 });
 
 //@desc Update  new Contact
