@@ -42,6 +42,8 @@ const updateContact = asyncHandler( async(req, res) => {
 //@access public
 const deleteContact = asyncHandler( async(req, res) => {
   const contact = await Contact.findById(req.params.id);
+  if(!contact) {
+    res.status(404);
 
   res.status(200).json({message:`Delete Contact ${req.params.id}`});
 });
