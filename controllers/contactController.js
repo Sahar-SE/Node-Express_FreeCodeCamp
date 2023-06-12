@@ -40,9 +40,9 @@ const updateContact = asyncHandler( async(req, res) => {
 //@desc Delete Contact
 //@route DELETE /api/contact/:id
 //@access public
-const deleteContact = asyncHandler((req, res) => {
+const deleteContact = asyncHandler( async(req, res) => {
   const contact = await Contact.findById(req.params.id);
-  
+
   res.status(200).json({message:`Delete Contact ${req.params.id}`});
 });
 
