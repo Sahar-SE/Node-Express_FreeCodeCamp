@@ -47,7 +47,7 @@ const deleteContact = asyncHandler((req, res) => {
 //@desc Show Contact
 //@route GET /api/contact/:id
 //@access public
-const showContact = asyncHandler((req, res) => {
+const showContact = asyncHandler( async(req, res) => {
   const contact = await Contact.findById(req.params.id);
   if(!contact) {
     res.status(404);
