@@ -33,6 +33,7 @@ const updateContact = asyncHandler((req, res) => {
     res.status(404);
     throw new Error("Contact not found");
   }
+  const updateContact = await Contact.findByIdAndUpdate(res.params.id, req.body);
   res.status(200).json({message:`Update Contact ${req.params.id}`});
 });
 
