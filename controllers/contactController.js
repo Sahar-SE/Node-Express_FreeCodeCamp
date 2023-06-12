@@ -43,6 +43,9 @@ const deleteContact = asyncHandler((req, res) => {
 //@access public
 const showContact = asyncHandler((req, res) => {
   const contact = await.Contact.findById(req.params.id);
+  if(!contact) {
+    res.status(404);
+  }
   res.status(200).json(contact);
 });
 
