@@ -27,7 +27,7 @@ const createContact = asyncHandler(async(req, res) => {
 //@desc Update  new Contact
 //@route PUT /api/contact/:id
 //@access public
-const updateContact = asyncHandler((req, res) => {
+const updateContact = asyncHandler( async(req, res) => {
   const contact = await.Contact.findById(req.params.id);
   if(!contact) {
     res.status(404);
