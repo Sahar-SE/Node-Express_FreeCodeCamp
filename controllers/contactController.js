@@ -18,9 +18,9 @@ const createContact = asyncHandler(async(req, res) => {
     await res.status(400);
     throw new Error("Fields are empty");
   };
-   const contact = await Contact.create({
-    name, lastname, phone,
-   });
+  const contact = await Contact.create({
+   name, lastname, phone,
+  });
    res.status(201).json(contact);
 });
 
@@ -42,6 +42,7 @@ const deleteContact = asyncHandler((req, res) => {
 //@route GET /api/contact/:id
 //@access public
 const showContact = asyncHandler((req, res) => {
+  const contact = await.Contact.findById(req.params.id);
   res.status(200).json({message:`Show Contact ${req.params.id}`});
 });
 
