@@ -20,7 +20,7 @@ const createContact = asyncHandler(async(req, res) => {
     throw new Error("Fields are empty");
   };
   const contact = await Contact.create({
-   name, lastname, phone,
+   name, email, phone,
   });
    res.status(201).json(contact);
    
