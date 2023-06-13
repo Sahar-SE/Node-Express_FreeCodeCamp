@@ -1,5 +1,6 @@
 const asyncHandler = require("express-async-handler");
-const Contact = require("../models/contactModel")
+const Contact = require("../models/contactModel");
+
 //@desc Get all Contacts
 //@route GET /api/contact
 //@access public
@@ -11,7 +12,7 @@ const getContact = asyncHandler( async(req, res) => {
 //@desc Create new Contact
 //@route POST /api/contact
 //@access public
-const createContact = asyncHandler(async(req, res) => {
+const createContact = asyncHandler( async(req, res) => {
   await console.log("The Request boby is:", req.body);
   const {name, email, phone} = req.boby;
   await console.log("2nd time", name);
