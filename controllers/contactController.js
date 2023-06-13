@@ -15,7 +15,7 @@ const createContact = asyncHandler(async(req, res) => {
   await console.log("The Request boby is:", req.body);
   const {name, email, phone} = req.boby;
   await console.log("2nd time", name);
-  if(!name || !lastname || !phone) {
+  if(!name || !email || !phone) {
     await res.status(400);
     throw new Error("Fields are empty");
   };
